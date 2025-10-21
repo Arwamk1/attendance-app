@@ -7,7 +7,7 @@ from openpyxl.styles import Font
 
 st.set_page_config(page_title="Attendance Report Generator", layout="centered")
 
-st.title("📊 Attendance Report Generator")
+st.title("Attendance Report Generator")
 
 uploaded_file = st.file_uploader("Upload your Excel attendance file", type=["xlsx"])
 
@@ -138,3 +138,8 @@ if uploaded_file:
 
     st.subheader("❗️ Missing Records (Not Included in Report)")
     st.dataframe(missing_df[['Date', 'Time', 'User ID', 'Name', 'Mode']])
+
+
+# git add .
+# git commit -m "your message"
+# git push origin main
