@@ -6,19 +6,6 @@ from openpyxl import Workbook
 from openpyxl.styles import Font
 
 st.set_page_config(page_title="Attendance Report Generator", layout="centered")
-dark_mode = """
-    <style>
-    body {
-        background-color: #0E1117;
-        color: white;
-    }
-    .stApp {
-        background-color: #0E1117;
-        color: white;
-    }
-    </style>
-"""
-st.markdown(dark_mode, unsafe_allow_html=True)
 
 st.title("📊 Attendance Report Generator")
 
